@@ -2610,12 +2610,12 @@ h4.post-title a {
     background: -moz-linear-gradient(left, #000 1%, #000 24%, #111 100%);
     background: -webkit-linear-gradient(left, #000 1%, #000 24%, #111 100%);
     background: linear-gradient(to right, #000 1%, #000 24%, #111 100%);
-    border: 1px solid #ffc107;
-    color: #ffc107;
+    border: 1px solid #FBAE17;
+    color: #FBAE17;
 }
 
 .scrollToTop:focus {
-    border: 1px solid #ffc107;
+    border: 1px solid #FBAE17;
     color: #fff;
 }
 
