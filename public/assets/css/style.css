@@ -1022,7 +1022,7 @@ section.market .simulator .timeline .single-item > span:after {
     width: 16px;
     height: 16px;
     background: #FBAE17;
-    margin: 8px auto 8px auto;
+    margin: 10px auto 8px auto;
     border: 1px solid #ffd;
     border-radius: 50%;
     transition: all 0.5s;
@@ -1032,7 +1032,7 @@ section.market .simulator .timeline .single-item > span.active:after,
 section.market .simulator .timeline .single-item > span:hover:after {
     width: 32px;
     height: 32px;
-    margin: 0 auto 4px auto;
+    margin: 2px auto 4px auto;
     background: #fff;
 }
 
