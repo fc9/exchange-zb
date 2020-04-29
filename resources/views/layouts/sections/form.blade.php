@@ -16,11 +16,11 @@
                     <p class="form-message"></p>
                     <form id="" action="{{ route('contact') }}" method="POST">
                         @csrf
-                        <input type="text" name="name" placeholder="@lang('home.form.name')">
-                        <input type="email" name="email" placeholder="@lang('home.form.email')">
-                        <input type="text" name="subject" placeholder="@lang('home.form.subject')">
-                        <textarea placeholder="@lang('home.form.message')" name="message"></textarea>
-                        <button type="submit" name="submit">@lang('home.form.button')</button>
+                        <input type="text" name="name" placeholder="@lang('Name')">
+                        <input type="email" name="email" placeholder="@lang('Email')">
+                        <input type="text" name="subject" placeholder="@lang('Subject')">
+                        <textarea placeholder="@lang('Your message')" name="message"></textarea>
+                        <button type="submit" name="submit">@lang('Send Message')</button>
                     </form>
                 </div>
             </div>
