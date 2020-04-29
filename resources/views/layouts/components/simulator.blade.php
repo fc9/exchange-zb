@@ -1,0 +1,39 @@
+<div class="row flexbox-center simulator" style="margin-top: 3.5rem">
+    <div class="col-lg-4">
+        <div class="simulator-box">
+            <p>@lang('If you bought')</p>
+            <span>$ <input type="text" id="amount" value="500" placeholder="0"></span>
+            <p>@lang('in <b>bitcoins</b>')</p>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <div class="box">
+            <p>@lang('Today you would have approximately')</p>
+
+            <div class="timeline">
+                <div class="timeline-area">
+                    <div class="line-area"></div>
+                    @foreach($quotes as $price)
+                    <div class="single-item">
+                        <span {{ $price['year'] == '2013' ? 'class=active' : '' }}
+                              data-start="{{$price['start']}}"
+                              data-end="{{$price['end']}}">
+                            {{$price['year']}}
+                        </span>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+            <span id="income">
+                R$ <b>0</b>
+            </span>
+            <script>
+                var amount = 500,
+                    current = 0,
+                    quotes = {'start': {{$initial['end']}}, 'end': {{$initial['start']}}},
+                    final = 0,
+                    parcela = 0
+            </script>
+        </div>
+    </div>
+</div>
