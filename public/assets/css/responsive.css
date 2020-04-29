@@ -1,6 +1,19 @@
 @media only screen and (max-width: 1199px) {
+    .mainmenu {
+        display: none;
+    }
+
     .mainmenu li a {
         padding: 6px 8px;
+    }
+
+    ul.slicknav_nav {
+        width: 20vw;
+    }
+
+    .responsive-menu,
+    .slicknav_menu {
+        display: block;
     }
 
     section.main .content {
@@ -30,19 +43,6 @@
         top: 150px;
         left: 10%;
         width: 80%;
-    }
-
-    .mainmenu {
-        display: none;
-    }
-
-    ul.slicknav_nav {
-        width: 20vw;
-    }
-
-    .responsive-menu,
-    .slicknav_menu {
-        display: block;
     }
 
     .header {
