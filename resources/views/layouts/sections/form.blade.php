@@ -11,7 +11,7 @@
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
                 <div class="vcontact-form">
-                    <h3>{{ strtoupper(__('home.form.header')) }}</h3>
+                    <h3>{{ strtoupper(__('Contact')) }}</h3>
                     <p>@lang('home.form.text')</p>
                     <p class="form-message"></p>
                     <form id="" action="{{ route('contact') }}" method="POST">
