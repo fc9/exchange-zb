@@ -795,7 +795,7 @@ section.main .single-slide img {
     opacity: 0;
     -webkit-transition: all .4s;
     transition: all .4s;
-    height: calc(90% - 1rem);
+    /*height: calc(90% - 1rem);*/
     width: auto;
     max-width: 100%;
     margin-top: 1rem;
