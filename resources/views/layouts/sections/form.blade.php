@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="copyright">
-                    <a target="_blank" href="{{ env('APP_URL') }}">@lang('Title')</a>
+                    <a target="_blank" href="{{ env(' home ') }}">@lang('Title')</a>
                     &copy; {{ date('Y') }}. @lang('All rights reserved.')
                 </div>
             </div>
