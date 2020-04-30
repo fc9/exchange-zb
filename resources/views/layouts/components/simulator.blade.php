@@ -2,7 +2,9 @@
     <div class="col-lg-4">
         <div class="simulator-box">
             <p>@lang('If you bought')</p>
-            <span>$ <input type="text" id="amount" value="500" placeholder="0"></span>
+            <span>
+                <span>$</span><input type="number" id="amount" value="500" placeholder="0">
+            </span>
             <p>@lang('in <b>bitcoins</b>')</p>
         </div>
     </div>

@@ -34,51 +34,70 @@
 @endsection
 
 @push('scripts')
-<script>
-(function ($) {
-    //"use strict";
+    <script>
+        (function ($) {
+            //"use strict";
 
-    /*----------------------------
-    START - Simulator
-    ------------------------------ */
-    var recalc = function () {
-    btc = Math.random() * (quotes['end'] - quotes['start']) + quotes['start']
-    final = amount * btc
-    parcela = (final - current) / 10
-    //console.log(quotes['end'], quotes['start'], 'btc = ' + btc, final, current, parcela)
-    }
+            /*----------------------------
+            START - Simulator
+            ------------------------------ */
+            var recalc = function () {
+                    btc = Math.random() * (quotes['end'] - quotes['start']) + quotes['start']
+                    final = amount * btc
+                    parcela = (final - current) / 10
+                    //console.log(quotes['end'], quotes['start'], 'btc = ' + btc, final, current, parcela)
+                },
+                currencyFormat = function (num) {
+                    console.log(num)
+                    return (num
+                            .toFixed(2)
+                            .replace(".", ";")
+                            .replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+                            .split(",").join(".")
+                            .replace(";", ",")
+                    )
+                },
+                amountUpdate = function (value) {
+                    amount = value
+                    amount = amount === '' || amount === null || isNaN(amount) ? 0 : amount
+                    amount *= amount < 0 ? -1 : 1
+                    console.log(amount)
+                }
 
-    recalc()
+            recalc()
 
-    var i = setInterval(function () {
-    //console.log(final, current, parcela)
-    if (final == current) return
-    current = (final > current)
-    ? ((current + parcela >= final) ? final : current + parcela)
-    : ((current + parcela <= final) ? final : current + parcela)
+            var i = setInterval(function () {
+                //console.log(final, current, parcela)
+                if (final == current) return
+                current = (final > current)
+                    ? ((current + parcela >= final) ? final : current + parcela)
+                    : ((current + parcela <= final) ? final : current + parcela)
 
-    $(".simulator #income > b").text(current.toFixed(2))
-    }, 100)
+                $(".simulator #income > b").text(currencyFormat(current))
+            }, 100)
 
-    $('#amount').keyup(function () {
-    amount = $(this).val()
-    amount = amount === '' || amount === null ? 1 : amount
-    console.log(amount)
-    recalc()
-    })
+            $('#amount').change(function () {
+                amountUpdate($(this).val())
+                recalc()
+            })
 
-    $(".timeline .single-item > span").on("click", function () {
-    if ($(this).hasClass("active")) {
-    return
-    } else {
-    // final = $(this).data('price')
-    quotes = {'start': $(this).data('start'), 'end': $(this).data('end')}
-    recalc()
+            $('#amount').keyup(function () {
+                amountUpdate($(this).val())
+                recalc()
+            })
 
-    $(".timeline .single-item > span").removeClass("active");
-    $(this).addClass("active");
-    }
-    })
-    })(jQuery);
-</script>
+            $(".timeline .single-item > span").on("click", function () {
+                if ($(this).hasClass("active")) {
+                    return
+                } else {
+                    // final = $(this).data('price')
+                    quotes = {'start': $(this).data('start'), 'end': $(this).data('end')}
+                    recalc()
+
+                    $(".timeline .single-item > span").removeClass("active");
+                    $(this).addClass("active");
+                }
+            })
+        })(jQuery);
+    </script>
 @endpush
