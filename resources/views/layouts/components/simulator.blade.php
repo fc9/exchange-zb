@@ -10,10 +10,9 @@
     </div>
     <div class="col-lg-8">
         <div class="box">
-            <p>@lang('Today you would have approximately')</p>
-
             <div class="timeline">
                 <div class="timeline-area">
+                    <div class="label">@lang('in')</div>
                     <div class="line-area"></div>
                     @foreach($quotes as $price)
                     <div class="single-item">
@@ -24,6 +23,7 @@
                     @endforeach
                 </div>
             </div>
+            <p class="conclusion">@lang('Today you would have approximately')</p>
             <span id="income">
                 $ <b>0</b>
             </span>
