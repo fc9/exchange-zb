@@ -31,7 +31,7 @@
                 var amount = 500,
                     current = 0,
                     purchase = {{ $initial['price'] }},
-                    today = 8871.75,
+                    today = {{ $btcToday  }},
                     final = 0,
                     parcela = 0
             </script>

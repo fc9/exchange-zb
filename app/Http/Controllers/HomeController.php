@@ -16,6 +16,8 @@ class HomeController extends Controller
 
     protected $initial = 0;
 
+    protected $btcToday = 0;
+
     public function __construct()
     {
         $this->getTickers();
@@ -29,7 +31,8 @@ class HomeController extends Controller
             'tickers' => $this->tickers,
             'usd' => $this->usd,
             'quotes' => $this->quotes,
-            'initial' => $this->initial
+            'initial' => $this->initial,
+            'btcToday' => $this->btcToday
         ]);
     }
 
@@ -66,7 +69,8 @@ class HomeController extends Controller
             'tickers' => $this->tickers,
             'usd' => $this->usd,
             'quotes' => $this->quotes,
-            'initial' => $this->initial
+            'initial' => $this->initial,
+            'btcToday' => $this->btcToday
         ]);
     }
 
@@ -95,6 +99,10 @@ class HomeController extends Controller
             $ticker['date'] = date("M,d,Y h:i:s A", $ticker['timestamp']);
             $ticker['color'] = $ticker['daily_change'] > 0 ? 'green' : 'red';
             $tickers[] = $ticker;
+
+            if ($currency['symbol'] === 'btc') {
+                $this->btcToday = $ticker['bid'];
+            }
         }
 
         $this->usd = $currentBtc->USD->sell;
@@ -116,5 +124,5 @@ class HomeController extends Controller
             ['year' => 2019, 'price' => (3242 + 8721 + 12500 + 9300 + 10300) / 5],
         ];
         $this->initial = $this->quotes[0];
-    }1832484
+    }
 }
