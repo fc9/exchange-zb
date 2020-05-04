@@ -17,9 +17,7 @@
                     <div class="line-area"></div>
                     @foreach($quotes as $price)
                     <div class="single-item">
-                        <span {{ $price['year'] == '2013' ? 'class=active' : '' }}
-                              data-start="{{$price['start']}}"
-                              data-end="{{$price['end']}}">
+                        <span {{ $price['year'] == '2010' ? 'class=active' : '' }} data-price="{{$price['price']}}">
                             {{$price['year']}}
                         </span>
                     </div>
@@ -27,12 +25,13 @@
                 </div>
             </div>
             <span id="income">
-                R$ <b>0</b>
+                $ <b>0</b>
             </span>
             <script>
                 var amount = 500,
                     current = 0,
-                    quotes = {'start': {{$initial['end']}}, 'end': {{$initial['start']}}},
+                    purchase = {{ $initial['price'] }},
+                    today = 8871.75,
                     final = 0,
                     parcela = 0
             </script>

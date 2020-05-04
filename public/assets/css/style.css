@@ -985,8 +985,8 @@ section.market .simulator .line-area {
     display: block;
     position: absolute;
     top: calc(50% - 2.5px);
-    left: 12%;
-    width: 76%;
+    left: 10%;
+    width: 80%;
     height: 5px;
     background: #ffd; /* Old browsers */
     background: -moz-linear-gradient(left, #FB6 10%, #fff 100%); /* FF3.6-15 */
@@ -995,11 +995,11 @@ section.market .simulator .line-area {
 }
 
 section.market .simulator .timeline .single-item {
-    width: 10%;
+    width: 8%;
     height: 100%;
     display: inline-block;
     position: relative;
-    margin: 0 4%;
+    margin: 0 0%;
     transition: width .5s;
     z-index: 1;
     /*border: 1px solid green;*/

@@ -42,8 +42,7 @@
             START - Simulator
             ------------------------------ */
             var recalc = function () {
-                    btc = Math.random() * (quotes['end'] - quotes['start']) + quotes['start']
-                    final = amount * btc
+                    final = (amount / purchase) * today
                     parcela = (final - current) / 10
                     //console.log(quotes['end'], quotes['start'], 'btc = ' + btc, final, current, parcela)
                 },
@@ -90,8 +89,7 @@
                 if ($(this).hasClass("active")) {
                     return
                 } else {
-                    // final = $(this).data('price')
-                    quotes = {'start': $(this).data('start'), 'end': $(this).data('end')}
+                    purchase =  $(this).data('price')
                     recalc()
 
                     $(".timeline .single-item > span").removeClass("active");

@@ -104,14 +104,17 @@ class HomeController extends Controller
     private function getBTCQuotes()
     {
         $this->quotes = [
-//            ['year' => 2011, 'start' => 86818.00, 'end' => 86263.18],
-//            ['year' => 2012, 'start' => 5207.62, 'end' => 5241.11],
-            ['year' => 2013, 'start' => 1622.19, 'end' => 1629.18],
-            ['year' => 2014, 'start' => 24.07, 'end' => 24.15],
-            ['year' => 2015, 'start' => 52.25, 'end' => 54.73],
-            ['year' => 2016, 'start' => 24.84, 'end' => 24.91],
-            ['year' => 2017, 'start' => 13.58, 'end' => 13.67]
+            ['year' => 2010, 'price' => 0.125],
+            ['year' => 2011, 'price' => 31],
+            ['year' => 2012, 'price' => 130],
+            ['year' => 2013, 'price' => (266 + 130 + 100 + 796 + 800) / 5],
+            ['year' => 2014, 'price' => (875 + 650 + 575 + 435 + 535) / 5],
+            ['year' => 2015, 'price' => (600 + 615 + 690) / 3],
+            ['year' => 2016, 'price' => (600 + 690 + 690) / 3],
+            ['year' => 2017, 'price' => (7850 + 17900 + 19783 + 13800) / 4],
+            ['year' => 2018, 'price' => (6200 + 6300 + 3300) / 3],
+            ['year' => 2019, 'price' => (3242 + 8721 + 12500 + 9300 + 10300) / 5],
         ];
         $this->initial = $this->quotes[0];
-    }
+    }1832484
 }
