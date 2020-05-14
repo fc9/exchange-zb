@@ -9,7 +9,7 @@
     <title>@yield('page.name')</title>
 
     <!-- BEGIN FAVICON -->
-    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="icon" type="image/png" href="favicon.png"/>
     <!-- END FAVICON -->
 
     <!-- BEGIN DESCRIPTION -->
