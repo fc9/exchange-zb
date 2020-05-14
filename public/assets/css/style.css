@@ -2784,7 +2784,7 @@ section.slider1 > .mbYTP_wrapper {
     overflow: visible;
     width: 100%;
     height: 100%;
-    background: #fff url("../../theme/loader.gif") no-repeat center center;
+    background: #fff url("../../theme/load.gif") no-repeat center center;
 }
 
 /*--------------------------------------
