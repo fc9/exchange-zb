@@ -1,23 +1,23 @@
 <!-- counter section start -->
-<section class="counter-area ptb-20">
+<section class="counters ptb-20 bg-gradient-2">
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-3">
                 <div class="single-counter-box">
                     <h2><span class="counter">6.0</span> Bi</h2>
-                    <p>@lang('In dollar traded.')</p>
+                    <p>@lang('#counter c1')</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-3">
                 <div class="single-counter-box">
                     <h2>+<span class="counter">650</span>K</h2>
-                    <p>@lang('Registered customers.')</p>
+                    <p>@lang('#counter c2')</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-3">
                 <div class="single-counter-box">
                     <h2><span class="counter">5</span>K</h2>
-                    <p>@lang('One of the first crypto exchange.')</p>
+                    <p>@lang('#counter c3')</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-3" style="border:0">
@@ -30,7 +30,7 @@
                         <path d="M115.33,201.77a3.9,3.9,0,0,1-3.85,3.94,3.94,3.94,0,0,1-3.9-3.9,3.88,3.88,0,0,1,3.87-3.91A3.83,3.83,0,0,1,115.33,201.77Z"/><path d="M115.34,43.89a3.88,3.88,0,1,1-7.77.07,3.88,3.88,0,0,1,7.77-.07Z"/>
                         <path d="M38.19,76.27a4,4,0,0,1,3.72,4.08,3.87,3.87,0,1,1-7.73-.3A4,4,0,0,1,38.19,76.27Z"/>
                     </svg>
-                    <p>@lang('Buy cryptocurrencies safely.')</p>
+                    <p>@lang('#counter c4')</p>
                 </div>
             </div>
         </div>

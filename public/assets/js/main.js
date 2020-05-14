@@ -132,7 +132,7 @@
         return false;
     });
 
-    var heroSlider = $("section.main .slider");
+    var heroSlider = $("section.slider1 .slider");
     heroSlider.owlCarousel({
         loop: true,
         dots: false,

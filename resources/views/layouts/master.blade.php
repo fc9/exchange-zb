@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
-<html lang="@lang('home.lang')">
+<html lang="@lang('#lang')">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>{{config('app.name')}} @yield('page.name')</title>
+    <title>@yield('page.name')</title>
 
     <!-- BEGIN FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="theme/favicon.ico"/>
@@ -59,9 +59,9 @@
 <!-- Page loader -->
 <div id="preloader"></div>
 
-<img id="background-paralax" src="theme/world-map.png" alt="">
+<img id="background-paralax" src="theme/background-cloud.png" alt="">
 
-@include('layouts.components.header')
+@include('layouts.sections.header')
 
 @yield('page.body')
 

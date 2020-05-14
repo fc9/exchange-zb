@@ -1,55 +1,34 @@
 <!-- sae (simple and easy) section start -->
-<section class="p2p ptb-90" id="p2p">
+<section class="p2p ptb-90 bbg-gradient-1" id="p2p">
     <div class="container">
         <div class="row flexbox-center">
             <div class="man-desktop col-lg-6 col-md-6">
-                <img src="./theme/p2p.png" alt="">
+                <img src="./theme/cell.png" alt="">
             </div>
-            <div class="col-lg-6 col-md-6 text-center">
+            <div class="col-lg-6 col-md-6">
                 <div class="col title">
-                    <h2>@lang('Exchange')</h2>
-                    <h2 class="thin">@lang('Peer-to-Peer')</h2>
-                    <h6>@lang('safer to buy and sell bitcoin.')</h6>
+                    <h2>@lang('#p2p title')</h2>
+                    <h2 class="thin">@lang('#p2p subtitle')</h2>
+                    <h6>@lang('#p2p legend')</h6>
                 </div>
-                <div class="p2p-box col-4">
-                    <img src="./theme/icons/tag-money.svg" alt="@lang('Buy & Sell Offers')">
-                    @lang('Buy & Sell Offers')
+                <div class="p2p-box col">
+                    <img src="./theme/@lang('#p2p p1 icon')" alt="@lang('#p2p p1 title')">
+                    <h3>@lang('#p2p p1 title')</h3>
+                    <p>@lang('#p2p p1 content')</p>
                 </div>
-                <div class="p2p-box col-4">
-                    <img src="./theme/icons/qrcode.svg" alt="@lang('2FA Auth')">
-                    @lang('2FA Auth')
+                <div class="p2p-box col">
+                    <img src="./theme/@lang('#p2p p2 icon')" alt="@lang('#p2p p2 title')">
+                    <h3>@lang('#p2p p2 title')</h3>
+                    <p>@lang('#p2p p2 content')</p>
                 </div>
-                <div class="p2p-box col-4">
-                    <img src="./theme/icons/tag-time.svg" alt="@lang('Real Time Coin Price')">
-                    @lang('Real Time Coin Price')
-                </div>
-                <div class="p2p-box col-4">
-                    <img src="./theme/icons/wallet.svg" alt="@lang('Crypto Wallets')">
-                    @lang('Crypto Wallets')
-                </div>
-                <div class="p2p-box col-4">
-                    <img src="./theme/icons/card.svg" alt="@lang('Diverse Payment Method')">
-                    @lang('Diverse Payment Method')
-                </div>
-                <div class="p2p-box col-4">
-                    <img src="./theme/icons/secury.svg" alt="@lang('Secure Escrow')">
-                    @lang('Secure Escrow')
-                </div>
-                <div class="p2p-box col-4">
-                    <img src="./theme/icons/chat.svg" alt="@lang('Live Chats')">
-                    @lang('Live Chats')
-                </div>
-                <div class="p2p-box col-4">
-                    <img src="./theme/icons/5star.svg" alt="@lang('5-Star Rating')">
-                    @lang('5-Star Rating')
-                </div>
-                <div class="p2p-box col-4">
-                    <img src="./theme/icons/btc.svg" alt="@lang('Multi-Coin Support')">
-                    @lang('Multi-Coin Support')
+                <div class="p2p-box col">
+                    <img src="./theme/@lang('#p2p p3 icon')" alt="@lang('#p2p p3 title')">
+                    <h3>@lang('#p2p p3 title')</h3>
+                    <p>@lang('#p2p p3 content')</p>
                 </div>
             </div>
-            <div class="man-mobile">
-                <img src="./theme/p2p.png" alt="">
+            <div class="man-mobile text-center">
+                <img src="./theme/cell.png" alt="">
             </div>
         </div>
     </div>
