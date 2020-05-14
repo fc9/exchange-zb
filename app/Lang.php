@@ -31,7 +31,9 @@ class Lang extends \Illuminate\Support\Facades\Lang
      */
     public static function getSupportedLanguages()
     {
-        return array_slice(scandir(app()->langPath()), 2);
+        return array_map(function ($value) {
+            return strpos($value, '.') ? '': $value;
+        }, array_slice(scandir(app()->langPath()), 2));
     }
 
     /**

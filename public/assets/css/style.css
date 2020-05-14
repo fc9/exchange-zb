@@ -460,7 +460,7 @@ img#background-paralax {
     text-transform: uppercase;
 }
 
-.mainmenu li a {
+.mainmenu li>a {
     display: inline-block;
     color: #fff;
     position: relative;
@@ -473,20 +473,20 @@ img#background-paralax {
     line-height: 15px;
 }
 
-.mainmenu ul li a.active,
-.mainmenu ul li a.active:hover {
+.mainmenu ul li>a.active,
+.mainmenu ul li>a.active:hover {
     border: 1px solid #72A42A;
     color: #72A42A;
 }
 
-.mainmenu ul li a:hover {
+.mainmenu ul li>a:hover {
     border: 1px solid #4F7F21;
     color: #4F7F21;
 }
 
 
-.header.sticky .mainmenu li a.btn,
-.mainmenu li a.btn {
+.header.sticky .mainmenu li>a.btn,
+.mainmenu li>a.btn {
     margin: 0 0 0 -9px;
 }
 

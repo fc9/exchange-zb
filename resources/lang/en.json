@@ -1,5 +1,9 @@
 {
     "#lang": "en",
+    "#language": "English",
+    "#country": "EN",
+    "#country-name": "England",
+    "#class-flag-icon": "flag-icon-gb",
     "#title": "PROFIT",
     "#name": "PROFIT",
     "#fullname": "PROFIT TRANDING",

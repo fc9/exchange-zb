@@ -29,6 +29,8 @@
                             <a target="_blank" class="btn" href="@lang('#link-register')">
                                 @lang('Create your account')
                             </a>
+                        </li><li>
+                            @include('layouts.components.dropdown-lang')
                         </li>
                     </ul>
                 </div>

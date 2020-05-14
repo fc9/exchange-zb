@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="@lang('#lang')">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
@@ -40,6 +40,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
+    <!-- Flags -->
+    <link rel="stylesheet" type="text/css" href="assets/css/flags.css">
 
     <!-- Main style CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all"/>
@@ -74,6 +76,7 @@
 <!-- jquery main JS -->
 <script src="assets/js/jquery.min.js"></script>
 <!-- Bootstrap JS -->
+<script src="plugins/popper/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <!-- Swiper JS -->
 <script src="assets/js/jquery.collapsible.min.js"></script>

@@ -1,5 +1,9 @@
 {
     "#lang": "pt-PT",
+    "#language": "Português de Portugal",
+    "#country": "PT",
+    "#country-name": "Portugal",
+    "#class-flag-icon": "flag-icon-pt",
     "#title": "PROFIT",
     "#name": "PROFIT",
     "#fullname": "PROFIT TRANDING",
