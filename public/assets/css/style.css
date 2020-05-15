@@ -438,7 +438,7 @@ input::-webkit-input-placeholder {
 
 img.background-paralax-fixed,
 img.background-paralax-absolute {
-    max-width: 140vw;
+    max-width: 900px;
     width: 55vw;
     height: auto;
     opacity: .9;
@@ -505,6 +505,14 @@ img.background-paralax-fixed {
 .header.sticky .mainmenu li>a.btn,
 .mainmenu li>a.btn {
     margin: 0 0 0 -9px;
+}
+
+.header.sticky {
+    background: #f0f0f0; /* Old browsers */
+    background: -moz-linear-gradient(left, #fff 1%, #fff 24%, #ddd 67%, #eee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #fff 1%, #fff 24%, #ddd 67%, #eee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #fff 1%, #fff 24%, #ddd 67%, #eee 100%);
+    color: #2B1F9B;
 }
 
 /*--------------------------------------

@@ -1,5 +1,5 @@
 <!-- header section start -->
-<header class="header bg-gradient-0">
+<header class="header">
     <div class="container">
         <div class="row flexbox-center">
 
