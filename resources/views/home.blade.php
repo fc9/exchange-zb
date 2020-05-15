@@ -23,7 +23,7 @@
 
     {{--@include('layouts.sections.video')--}}
 
-    @include('layouts.sections.video2')
+    {{--    @include('layouts.sections.video2')--}}
 
     {{--    @include('layouts.sections.slider3')--}}
 
@@ -36,68 +36,68 @@
 @endsection
 
 @push('scripts')
-{{--    <script>--}}
-{{--        (function ($) {--}}
-{{--            //"use strict";--}}
+    {{--    <script>--}}
+    {{--        (function ($) {--}}
+    {{--            //"use strict";--}}
 
-{{--            /*------------------------------}}
-{{--            START - Simulator--}}
-{{--            ------------------------------ */--}}
-{{--            var recalc = function () {--}}
-{{--                    final = (amount / purchase) * today--}}
-{{--                    parcela = (final - current) / 10--}}
-{{--                    //console.log(quotes['end'], quotes['start'], 'btc = ' + btc, final, current, parcela)--}}
-{{--                },--}}
-{{--                currencyFormat = function (num) {--}}
-{{--                    console.log(num)--}}
-{{--                    return (num--}}
-{{--                            .toFixed(2)--}}
-{{--                            .replace(".", ";")--}}
-{{--                            .replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')--}}
-{{--                            .split(",").join(".")--}}
-{{--                            .replace(";", ",")--}}
-{{--                    )--}}
-{{--                },--}}
-{{--                amountUpdate = function (value) {--}}
-{{--                    amount = value--}}
-{{--                    amount = amount === '' || amount === null || isNaN(amount) ? 0 : amount--}}
-{{--                    amount *= amount < 0 ? -1 : 1--}}
-{{--                    console.log(amount)--}}
-{{--                }--}}
+    {{--            /*------------------------------}}
+    {{--            START - Simulator--}}
+    {{--            ------------------------------ */--}}
+    {{--            var recalc = function () {--}}
+    {{--                    final = (amount / purchase) * today--}}
+    {{--                    parcela = (final - current) / 10--}}
+    {{--                    //console.log(quotes['end'], quotes['start'], 'btc = ' + btc, final, current, parcela)--}}
+    {{--                },--}}
+    {{--                currencyFormat = function (num) {--}}
+    {{--                    console.log(num)--}}
+    {{--                    return (num--}}
+    {{--                            .toFixed(2)--}}
+    {{--                            .replace(".", ";")--}}
+    {{--                            .replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')--}}
+    {{--                            .split(",").join(".")--}}
+    {{--                            .replace(";", ",")--}}
+    {{--                    )--}}
+    {{--                },--}}
+    {{--                amountUpdate = function (value) {--}}
+    {{--                    amount = value--}}
+    {{--                    amount = amount === '' || amount === null || isNaN(amount) ? 0 : amount--}}
+    {{--                    amount *= amount < 0 ? -1 : 1--}}
+    {{--                    console.log(amount)--}}
+    {{--                }--}}
 
-{{--            recalc()--}}
+    {{--            recalc()--}}
 
-{{--            var i = setInterval(function () {--}}
-{{--                //console.log(final, current, parcela)--}}
-{{--                if (final == current) return--}}
-{{--                current = (final > current)--}}
-{{--                    ? ((current + parcela >= final) ? final : current + parcela)--}}
-{{--                    : ((current + parcela <= final) ? final : current + parcela)--}}
+    {{--            var i = setInterval(function () {--}}
+    {{--                //console.log(final, current, parcela)--}}
+    {{--                if (final == current) return--}}
+    {{--                current = (final > current)--}}
+    {{--                    ? ((current + parcela >= final) ? final : current + parcela)--}}
+    {{--                    : ((current + parcela <= final) ? final : current + parcela)--}}
 
-{{--                $(".simulator #income > b").text(currencyFormat(current))--}}
-{{--            }, 100)--}}
+    {{--                $(".simulator #income > b").text(currencyFormat(current))--}}
+    {{--            }, 100)--}}
 
-{{--            $('#amount').change(function () {--}}
-{{--                amountUpdate($(this).val())--}}
-{{--                recalc()--}}
-{{--            })--}}
+    {{--            $('#amount').change(function () {--}}
+    {{--                amountUpdate($(this).val())--}}
+    {{--                recalc()--}}
+    {{--            })--}}
 
-{{--            $('#amount').keyup(function () {--}}
-{{--                amountUpdate($(this).val())--}}
-{{--                recalc()--}}
-{{--            })--}}
+    {{--            $('#amount').keyup(function () {--}}
+    {{--                amountUpdate($(this).val())--}}
+    {{--                recalc()--}}
+    {{--            })--}}
 
-{{--            $(".timeline .single-item > span").on("click", function () {--}}
-{{--                if ($(this).hasClass("active")) {--}}
-{{--                    return--}}
-{{--                } else {--}}
-{{--                    purchase = $(this).data('price')--}}
-{{--                    recalc()--}}
+    {{--            $(".timeline .single-item > span").on("click", function () {--}}
+    {{--                if ($(this).hasClass("active")) {--}}
+    {{--                    return--}}
+    {{--                } else {--}}
+    {{--                    purchase = $(this).data('price')--}}
+    {{--                    recalc()--}}
 
-{{--                    $(".timeline .single-item > span").removeClass("active");--}}
-{{--                    $(this).addClass("active");--}}
-{{--                }--}}
-{{--            })--}}
-{{--        })(jQuery);--}}
-{{--    </script>--}}
+    {{--                    $(".timeline .single-item > span").removeClass("active");--}}
+    {{--                    $(this).addClass("active");--}}
+    {{--                }--}}
+    {{--            })--}}
+    {{--        })(jQuery);--}}
+    {{--    </script>--}}
 @endpush

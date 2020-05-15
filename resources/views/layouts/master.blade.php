@@ -9,7 +9,7 @@
     <title>@yield('page.name')</title>
 
     <!-- BEGIN FAVICON -->
-    <link rel="icon" href="./theme/favicon.png"/>
+    <link rel="icon" href="./theme/@lang('#favicon')"/>
     <!-- END FAVICON -->
 
     <!-- BEGIN DESCRIPTION -->
@@ -57,7 +57,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body data-spy="scroll" data-target=".header" data-offset="50">
+<body data-spy="scroll" data-target=".header" data-offset="50" class="bg-gradient-0">
 <!-- Page loader -->
 <div id="preloader"></div>
 

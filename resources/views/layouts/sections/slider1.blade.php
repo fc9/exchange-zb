@@ -1,5 +1,5 @@
 <!-- main section start -->
-<section class="slider1" id="home">
+<section class="slider1" id="slider">
     <div class="slider">
         <div class="single-slide">
             <div class="container">
