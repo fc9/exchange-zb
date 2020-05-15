@@ -22,11 +22,11 @@
                         <li><a class="nav-link" href="{{ route('home') }}/#section3">@lang('#nav Peer-to-Peer')</a></li>
                         <li><a class="nav-link" href="{{ route('home') }}/#contact">@lang('#nav Contact')</a></li>
                         <li>
-                            <a target="_blank" class="btn btn-white" href="@lang('#link-login')">
+                            <a target="_blank" class="btn btn-white" href="@lang('#link-backoffice')">
                                 @lang('Login')&nbsp;
                             </a>
                         </li><li>
-                            <a target="_blank" class="btn" href="@lang('#link-register')">
+                            <a target="_blank" class="btn" href="@lang('#link-backoffice')">
                                 @lang('Create your account')
                             </a>
                         </li><li>
