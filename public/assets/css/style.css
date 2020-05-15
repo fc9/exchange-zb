@@ -436,20 +436,37 @@ input::-webkit-input-placeholder {
     color: #666;
 }
 
-img#background-paralax {
-    position: fixed;
-    top: 0;
-    left: -20vw;
-    width: 140vw;
+img.background-paralax-fixed,
+img.background-paralax-absolute {
     max-width: 140vw;
+    width: 55vw;
     height: auto;
     opacity: .9;
+}
+
+img.background-paralax-absolute {
+    position: absolute;
+    z-index: 0;
+}
+
+img.background-paralax-fixed {
+    position: fixed;
     z-index: -1;
 }
 
-/*--------------------------------------
-* MAINMENU
----------------------------------------*/
+.paralax1 {
+    top: 0;
+    left: 0;
+}
+
+.paralax2 {
+    bottom: 0;
+    right: 0;
+}
+
+    /*--------------------------------------
+    * MAINMENU
+    ---------------------------------------*/
 .mainmenu {
     text-align: right;
     display: block;
@@ -883,7 +900,7 @@ SLIDER1 SECTION END
 COLUMNS 2 SECTION
 --------------------------------------*/
 section.columns2 {
-    background: #D57C05 url('../../theme/background-cloud2.png') no-repeat 60% 60%/40% auto;
+    background: #CF5C1A url('../../theme/background-coins.png') no-repeat 60% 60%/40% auto;
     position: relative;
     z-index: 1;
     text-align: left;
@@ -924,10 +941,11 @@ section.columns2 a.btn {
 }
 
 section.columns2 #image1 {
-    float:left;
-    width:35%;
+    position: absolute;
+    top: -45%;
+    left: -50%;
+    width:90%;
     height:auto;
-    margin-right: .5rem;
 }
 
 section.columns2 #image2 {
@@ -1204,7 +1222,7 @@ section.market p {
 }
 
 section.market img.icon {
-    height: 60px;
+    height: 120px;
 }
 /*--------------------------------------
 MARKET SECTION END
@@ -1221,6 +1239,7 @@ section.steps {
     /*background-attachment: fixed;*/
     /*background-size: cover;*/
     color: #fff;
+    position: relative;
 }
 
 section.steps h1,
@@ -1231,6 +1250,10 @@ section.steps h5 {
     color: #CF5C1A;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+section.steps h5 {
+    font-weight: 600;
 }
 
 section.steps .sec-title h4.subtitle {
@@ -1692,6 +1715,7 @@ section.p2p{
     /*background-attachment: fixed;*/
     /*background-size: cover;*/
     padding-bottom: 0;
+    position: relative;
 }
 
 section.p2p h2,

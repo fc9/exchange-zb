@@ -50,23 +50,22 @@
     "#slide1 #header": "Security and tranquility",
     "#slide1 #header2": "is at :name",
     "#slide1 #button": "CREATE YOUR ACCOUNT",
-    "#slide1 #image": "theme/slide1.png",
+    "#slide1 #image": "theme/slide.png",
     
     "#slide2 #header": "Buy and sell",
     "#slide2 #header2": "Bitcoin is on PROFIT",
     "#slide2 #button": "CREATE YOUR ACCOUNT",
-    "#slide2 #image": "theme/slide2.png",
+    "#slide2 #image": "theme/slide.png",
     
     "#slide3 #header": "PEER-TO-PEER",
     "#slide3 #header2": "safer to buy and sell",
     "#slide3 #button": "CREATE YOUR ACCOUNT",
-    "#slide3 #image": "theme/slide3.png",
+    "#slide3 #image": "theme/slide.png",
     
     "Start now and let selected professionals work for you!": "Start now and let selected professionals work for you!",
     "It's a social trading revolution!": "It's a social trading revolution!",
     "Browse the list of best traders, check your profit statistics and choose the most successful ones to copy.": "Browse the list of best traders, check your profit statistics and choose the most successful ones to copy.",
-    "#image lupa": "icons/lupa.svg",
-    "#image notebook": "notebook.png",
+    "#columns2 image": "coins.png",
     
     "#steps subtitle": "Meet Our Plan",
     "#steps title": "Compensation",

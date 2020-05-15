@@ -38,6 +38,8 @@
                 $("html,body").animate({scrollTop: targetOffset}, 2000);
                 return false;
             }
+            $(".nav-link").removeClass("active");
+            $(this).addClass("active");
         }
     });
 

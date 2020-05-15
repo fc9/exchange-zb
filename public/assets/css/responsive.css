@@ -46,6 +46,12 @@
     .contact-address li {
         margin-bottom: 25px;
     }
+
+    section.columns2 #image1 {
+        top: -40%;
+        left: -60%;
+        width:100%;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -175,6 +181,14 @@
         font-size: 18px;
         margin: 0.8rem 0;
     }
+
+    section.columns2 #image1 {
+        display:none;
+        top: -45%;
+        left: -100%;
+        max-width: unset;
+        width: 170%;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -210,7 +224,6 @@
         width: calc(50% - 2rem);
         margin: 0.5rem 0.5rem;
     }
-        text-align: center;
 
     section.video .video-popup h1 {
         font-size: 18px;
@@ -299,6 +312,11 @@
         height: 80px;
         border-radius: 40px;
         padding-top: 10px;
+    }
+
+    section.columns2 {
+        background-position: -54px 183px;
+        background-size: 100%;
     }
 
     section.columns2 h2 {

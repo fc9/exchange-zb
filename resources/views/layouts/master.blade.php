@@ -61,7 +61,8 @@
 <!-- Page loader -->
 <div id="preloader"></div>
 
-<img id="background-paralax" src="theme/background-cloud.png" alt="">
+<img class="background-paralax-fixed paralax1" src="theme/background-5.png" alt="">
+<img class="background-paralax-fixed paralax2" src="theme/background-4.png" alt="">
 
 @include('layouts.sections.header')
 
