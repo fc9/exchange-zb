@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-3">
                 <div class="single-counter-box">
-                    <h2><span class="counter">5</span> Bi</h2>
+                    <h2><span class="counter">5</span> K</h2>
                     <h5>@lang('#counter h1')</h5>
                     <p>@lang('#counter c1', ['name'=> __('#name')])</p>
                 </div>
