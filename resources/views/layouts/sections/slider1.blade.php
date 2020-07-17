@@ -6,9 +6,10 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="content">
-                            <h2 class="thin">@lang('#slide1 #header', ['name' => __('#name')])</h2>
+                            <h2 class="extra-light">@lang('#slide1 #header', ['name' => __('#name')])</h2>
                             <h2>@lang('#slide1 #header2', ['name' => __('#name')])</h2>
-                            <a href="@lang('#link-exchange')" class="btn btn-yellow">
+                            <p>@lang('#slide1 #content')</p>
+                            <a href="@lang('#link-backoffice')" class="btn btn-g">
                                 @lang('#slide1 #button')
                             </a>
                         </div>
@@ -26,9 +27,10 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="content">
-                            <h2 class="thin">@lang('#slide2 #header', ['name' => __('#name')])</h2>
+                            <h2 class="extra-light">@lang('#slide2 #header', ['name' => __('#name')])</h2>
                             <h2>@lang('#slide2 #header2', ['name' => __('#name')])</h2>
-                            <a href="@lang('#link-exchange')" class="btn btn-yellow">
+                            <p>@lang('#slide2 #content')</p>
+                            <a href="@lang('#link-backoffice')" class="btn btn-g">
                                 @lang('#slide2 #button')
                             </a>
                         </div>
@@ -46,10 +48,11 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="content">
-                            <h2 class="thin">@lang('#slide3 #header', ['name' => __('#name')])</h2>
+                            <h2 class="extra-light">@lang('#slide3 #header', ['name' => __('#name')])</h2>
                             <h2>@lang('#slide3 #header2', ['name' => __('#name')])</h2>
-                            <a href="@lang('#link-exchange')"
-                               class="btn btn-yellow" target="_blank">
+                            <p>@lang('#slide3 #content')</p>
+                            <a href="@lang('#link-backoffice')"
+                               class="btn btn-g" target="_blank">
                                 @lang('#slide3 #button')
                             </a>
                         </div>

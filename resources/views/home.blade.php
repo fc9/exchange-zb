@@ -15,7 +15,9 @@
 
     @include('layouts.sections.steps')
 
-    @include('layouts.sections.counters')
+    {{--    @include('layouts.sections.counters')--}}
+
+    @include('layouts.sections.timeline')
 
     @include('layouts.sections.p2p')
 

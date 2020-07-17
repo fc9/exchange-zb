@@ -1,5 +1,5 @@
 <!-- contato section start -->
-<section class="contact ptb-20 bg-gradient-1" id="contact">
+<section class="contact ptb-20 bg-gradient-2" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 col">

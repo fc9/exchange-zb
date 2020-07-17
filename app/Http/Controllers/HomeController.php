@@ -20,8 +20,8 @@ class HomeController extends Controller
 
     public function __construct()
     {
-        $this->getTickers();
-        $this->getBTCQuotes();
+//        $this->getTickers();
+//        $this->getBTCQuotes();
     }
 
     public function home()

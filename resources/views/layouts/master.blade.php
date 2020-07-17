@@ -61,8 +61,8 @@
 <!-- Page loader -->
 <div id="preloader"></div>
 
-<img class="background-paralax-fixed paralax1" src="theme/background-5.png" alt="">
-<img class="background-paralax-fixed paralax2" src="theme/background-4.png" alt="">
+<img class="background-paralax-fixed paralax2" src="theme/background-a.png" alt="">
+{{--<img class="background-paralax-fixed paralax2" src="theme/background-4.png" alt="">--}}
 
 @include('layouts.sections.header')
 

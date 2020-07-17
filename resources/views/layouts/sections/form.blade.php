@@ -1,5 +1,5 @@
 <!-- form section start -->
-<section class="form ptb-90 bg-gradient-1" id="form">
+<section class="form ptb-90 bg-gradient-2" id="form">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
