@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2 class="thin">@lang('#timeline title')</h2>
+                <h2 class="thin text-uppercase">@lang('#timeline title', ['name' => __('#name')])</h2>
                 <!-- timeline -->
                 <div class="timeline row">
                     <div class="col-md-3">
